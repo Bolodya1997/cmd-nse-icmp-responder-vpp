@@ -238,7 +238,7 @@ func main() {
 	}
 
 	registryClient := registrychain.NewNetworkServiceEndpointRegistryClient(
-		registryrefresh.NewNetworkServiceEndpointRegistryClient(),
+		registryrefresh.NewNetworkServiceEndpointRegistryClient(ctx),
 		registrysendfd.NewNetworkServiceEndpointRegistryClient(),
 		registryapi.NewNetworkServiceEndpointRegistryClient(cc),
 	)
